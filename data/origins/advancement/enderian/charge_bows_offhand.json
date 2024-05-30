@@ -1,0 +1,43 @@
+{
+    "criteria": {
+        "eat_meat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt":"{Tags:[\"Enderian\"]}",
+                            "slots":{
+                                "weapon.offhand":{
+                                    "items": "#origins:bows"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "slots":{
+                                    "weapon":{
+                                        "items": "#origins:bows"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "item": {
+                    "items": "#origins:bows"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "origins:drop_shield_parent"
+    }
+}

@@ -1,0 +1,181 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 1
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 110
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 2
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 211
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 3
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 322
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 4
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 443
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 5
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 554
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 6
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 665
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 7
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 776
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsWaterTypeMax": 8
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsHeightInBlock": {
+                            "min": 0,
+                            "max": 887
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

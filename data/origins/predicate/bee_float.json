@@ -1,0 +1,41 @@
+{
+    "condition":"all_of",
+    "terms":[
+        {
+            "condition":"location_check",
+            "offsetY": -1,
+            "predicate":{
+                "block":{
+                    "blocks":"#origins:air_types"
+                }
+            }
+        },
+        {
+            "condition":"location_check",
+            "offsetY": -2,
+            "predicate":{
+                "block":{
+                    "blocks":"#origins:air_types"
+                }
+            }
+        },
+        {
+            "condition":"location_check",
+            "offsetY": -3,
+            "predicate":{
+                "block":{
+                    "blocks":"#origins:air_types"
+                }
+            }
+        },
+        {
+            "condition":"location_check",
+            "offsetY": 0,
+            "predicate":{
+                "block":{
+                    "blocks":"#origins:air_types"
+                }
+            }
+        }
+    ]
+}

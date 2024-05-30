@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "took_hit": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "origins:kinetic_damage",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "origins:extra_kinetic_damage"
+    }
+}

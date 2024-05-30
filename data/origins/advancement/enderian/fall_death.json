@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:ender_pearl"
+        },
+        "title": "Bug Finder",
+        "description": [
+            "Hit the ground too hard as an ",
+            {
+                "text": "Enderian",
+                "color": "#333333",
+                "bold": true,
+                "italic": false
+            }
+        ],
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "death_by_peal": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "killing_blow": {
+                    "tags": [
+                        {
+                            "id": "minecraft:is_fall",
+                            "expected": true
+                        }
+                    ],
+                    "source_entity": {
+                        "type": "minecraft:ender_pearl"
+                    },
+                    "direct_entity": {
+                        "type": "minecraft:ender_pearl"
+                    }
+                }
+            }
+        }
+    }
+}

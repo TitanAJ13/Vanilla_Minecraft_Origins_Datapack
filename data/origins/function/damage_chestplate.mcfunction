@@ -1,0 +1,9 @@
+execute if score @s originsDamageTaken2 matches ..0 at @s run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.8 1
+execute if score @s originsDamageTaken2 matches ..0 as @s[nbt={Inventory:[{Slot:9b,id:"minecraft:golden_chestplate"}]}] at @s anchored eyes positioned ^ ^ ^ run particle item{item:{id:"minecraft:golden_chestplate"}} ~ ~-0.1 ~ 0.0416 0.0416 0.0416 0.05 5 normal @a
+execute if score @s originsDamageTaken2 matches ..0 as @s[nbt={Inventory:[{Slot:9b,id:"minecraft:leather_chestplate"}]}] at @s anchored eyes positioned ^ ^ ^ run particle item{item:{id:"minecraft:leather_chestplate"}} ~ ~-0.1 ~ 0.0416 0.0416 0.0416 0.05 5 normal @a
+execute if score @s originsDamageTaken2 matches ..0 as @s[nbt={Inventory:[{Slot:9b,id:"minecraft:chainmail_chestplate"}]}] at @s anchored eyes positioned ^ ^ ^ run particle item{item:{id:"minecraft:chainmail_chestplate"}} ~ ~-0.1 ~ 0.0416 0.0416 0.0416 0.05 5 normal @a
+execute if score @s originsDamageTaken2 matches ..0 run return run item replace entity @s inventory.0 with minecraft:air
+
+execute as @s[nbt={Inventory:[{Slot:9b,id:"minecraft:golden_chestplate"}]}] run return run item modify entity @s inventory.0 {"function":"set_damage","damage":{"type":"score","target":{"type":"context","target":"this"},"score":"originsDamageTaken2","scale":0.00892857}}
+execute as @s[nbt={Inventory:[{Slot:9b,id:"minecraft:leather_chestplate"}]}] run return run item modify entity @s inventory.0 {"function":"set_damage","damage":{"type":"score","target":{"type":"context","target":"this"},"score":"originsDamageTaken2","scale":0.0124999992549419403076171875}}
+execute as @s[nbt={Inventory:[{Slot:9b,id:"minecraft:chainmail_chestplate"}]}] run return run item modify entity @s inventory.0 {"function":"set_damage","damage":{"type":"score","target":{"type":"context","target":"this"},"score":"originsDamageTaken2","scale":0.0041666664183139801025390625}}

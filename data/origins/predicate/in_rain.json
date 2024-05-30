@@ -1,0 +1,13 @@
+{
+    "condition":"all_of",
+    "terms":[
+        {
+            "condition":"reference",
+            "name":"origins:is_raining"
+        },
+        {
+            "condition":"reference",
+            "name":"origins:can_see_sky"
+        }
+    ]
+}

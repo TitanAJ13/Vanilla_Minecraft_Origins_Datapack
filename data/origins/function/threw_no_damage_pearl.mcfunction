@@ -1,0 +1,1 @@
+$execute as @e[type=ender_pearl,tag=!NoDamage,tag=!HasMarker,nbt={Owner:$(UUID)}] run tag @s add NoDamage

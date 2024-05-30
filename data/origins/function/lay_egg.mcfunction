@@ -1,0 +1,1 @@
+$execute at @s anchored feet run summon minecraft:item ~ ~0.5 ~ {Item:{id:"minecraft:egg",count:1},PickupDelay:40s,Thrower:$(UUID)}

@@ -1,0 +1,8 @@
+{
+    "values":[
+        "origins:tick",
+        "origins:choice_type",
+        "origins:cooldown_timer",
+        "origins:stay"
+    ]
+}

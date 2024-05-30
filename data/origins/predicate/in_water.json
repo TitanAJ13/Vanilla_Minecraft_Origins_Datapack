@@ -1,0 +1,35 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "originsInWaterHigh": 1
+            }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "originsInWaterMid": 1
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsInWaterLow": 1
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "origins:height_check"
+                }
+            ]
+        }
+    ]
+}

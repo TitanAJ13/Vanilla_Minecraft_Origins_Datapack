@@ -1,7 +1,13 @@
 execute as @a[tag=!StartChoice] run function origins:make_choice
 
-execute as @a[tag=!Elytrian,tag=!Fox,tag=!Human,tag=!Inchling,tag=!Merling,tag=!Rabbit] run function origins:height_in_block
-execute as @a[tag=!Elytrian,tag=!Fox,tag=!Human,tag=!Inchling,tag=!Merling,tag=!Rabbit] run function origins:touching_water
+execute as @a[scores={originsChoiceType=-13..-1}] run function origins:choice_type
+scoreboard players enable @a[scores={originsChoiceType=0..}] originsChoiceType
+scoreboard players reset @a[scores={originsChoiceType=0..}] originsChoiceType
+scoreboard players enable @a[scores={originsChoiceType=..-14}] originsChoiceType
+scoreboard players reset @a[scores={originsChoiceType=..-14}] originsChoiceType
+
+execute as @a[tag=!Elytrian,tag=!Feline,tag=!Fox,tag=!Human,tag=!Inchling,tag=!Merling,tag=!Rabbit] run function origins:height_in_block
+execute as @a[tag=!Elytrian,tag=!Feline,tag=!Fox,tag=!Human,tag=!Inchling,tag=!Merling,tag=!Rabbit] run function origins:touching_water
 
 execute as @e[type=ender_pearl,tag=NoDamage] run function origins:no_damage_pearl with entity @s
 execute as @e[type=marker,tag=NoDamPearl] run function origins:no_damage_pearl_tp with entity @s data
@@ -18,3 +24,5 @@ execute as @a[tag=Bumblebee] run function origins:bumblebee
 execute as @a[tag=Elytrian] run function origins:elytrian
 
 execute as @a[tag=Enderian] run function origins:enderian
+
+execute as @a[tag=Feline] run function origins:feline

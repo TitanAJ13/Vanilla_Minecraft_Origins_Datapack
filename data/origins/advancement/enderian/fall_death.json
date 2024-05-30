@@ -18,21 +18,17 @@
         "hidden": true
     },
     "criteria": {
-        "death_by_peal": {
-            "trigger": "minecraft:entity_killed_player",
+        "requirement": {
+            "trigger": "minecraft:entity_hurt_player",
             "conditions": {
-                "killing_blow": {
-                    "tags": [
-                        {
-                            "id": "minecraft:is_fall",
-                            "expected": true
-                        }
-                    ],
-                    "source_entity": {
-                        "type": "minecraft:ender_pearl"
-                    },
-                    "direct_entity": {
-                        "type": "minecraft:ender_pearl"
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_fall",
+                                "expected": true
+                            }
+                        ]
                     }
                 }
             }

@@ -4,7 +4,6 @@ effect clear @s minecraft:hunger
 attribute @s[tag=SpawnFound] minecraft:generic.gravity base set 0.08
 attribute @s[tag=SpawnFound] minecraft:generic.jump_strength base set 0.41999998688697815
 attribute @s[tag=SpawnFound] minecraft:generic.movement_speed base set 0.100000001490116119384765625
-attribute @s minecraft:generic.attack_damage modifier remove origins:air_strength
 
 execute if predicate origins:is_on_fire run attribute @s minecraft:generic.attack_damage modifier add origins:fire_strength 0.25 add_multiplied_total
 execute unless predicate origins:is_on_fire run attribute @s minecraft:generic.attack_damage modifier remove origins:fire_strength

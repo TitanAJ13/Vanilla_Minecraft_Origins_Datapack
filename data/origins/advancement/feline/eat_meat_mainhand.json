@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "eat_meat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt":"{Tags:[\"Feline\"]}",
+                            "slots":{
+                                "weapon":{
+                                    "items": "#origins:nonpescatarian"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "item": {
+                    "items": "#origins:nonpescatarian"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "origins:drop_holding_parent"
+    }
+}

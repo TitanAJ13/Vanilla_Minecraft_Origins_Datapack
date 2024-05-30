@@ -1,8 +1,6 @@
 attribute @s minecraft:generic.gravity base set 0.08
 attribute @s minecraft:generic.jump_strength base set 0.41999998688697815
 attribute @s minecraft:generic.fall_damage_multiplier base set 1
-attribute @s minecraft:generic.attack_damage modifier remove origins:fire_strength
-attribute @s minecraft:generic.attack_damage modifier remove origins:air_strength
 execute unless predicate origins:is_sneaking unless predicate origins:in_water run attribute @s minecraft:generic.gravity base set 0.04
 execute unless predicate origins:is_sneaking unless predicate origins:in_water run attribute @s minecraft:generic.jump_strength base set 0.30917
 execute unless predicate origins:is_sneaking unless predicate origins:in_water run attribute @s minecraft:generic.fall_damage_multiplier base set 0

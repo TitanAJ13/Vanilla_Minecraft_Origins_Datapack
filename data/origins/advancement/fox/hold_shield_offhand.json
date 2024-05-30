@@ -1,0 +1,43 @@
+{
+    "criteria": {
+        "eat_meat": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt":"{Tags:[\"Fox\"]}",
+                            "slots":{
+                                "weapon.offhand":{
+                                    "items": "minecraft:shield"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "slots":{
+                                    "weapon":{
+                                        "items": "minecraft:shield"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "item": {
+                    "items": "minecraft:shield"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "origins:drop_shield_parent"
+    }
+}

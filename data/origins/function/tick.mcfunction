@@ -26,3 +26,5 @@ execute as @a[tag=Elytrian] run function origins:elytrian
 execute as @a[tag=Enderian] run function origins:enderian
 
 execute as @a[tag=Feline] run function origins:feline
+
+execute as @a[tag=Fox] run function origins:fox

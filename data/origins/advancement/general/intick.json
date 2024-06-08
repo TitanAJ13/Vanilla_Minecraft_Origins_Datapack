@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:stone"
+      },
+      "title":"FAST",
+      "description": "",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "c riteria": {
+      "requirement": {
+        "trigger": "minecraft:enter_block",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "origins:deaggro"
+    }
+  }
+  

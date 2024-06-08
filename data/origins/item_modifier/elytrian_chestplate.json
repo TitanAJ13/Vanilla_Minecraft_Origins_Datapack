@@ -1,0 +1,57 @@
+{
+    "function": "sequence",
+    "functions": [
+        {
+            "function": "set_item",
+            "item": "minecraft:elytra"
+        },
+        {
+            "function": "set_name",
+            "name": {
+                "text": "Elytrian Wings",
+                "italic": false,
+                "color": "gold"
+            }
+        },
+        {
+            "function": "set_lore",
+            "lore": [
+                {
+                    "text": "The glorious unbreakable",
+                    "italic": false
+                },
+                {
+                    "text": "wings of an Elytrian",
+                    "italic": false
+                },
+                {
+                    "text": "Cannot be taken off",
+                    "italic": false,
+                    "color": "red"
+                }
+            ],
+            "mode": "replace_all"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "minecraft:unbreakable": {},
+                "!minecraft:damage": {}
+            }
+        },
+        {
+            "function": "set_enchantments",
+            "enchantments": {
+                "minecraft:binding_curse": 1,
+                "minecraft:vanishing_curse": 1
+            }
+        },
+        {
+            "function": "toggle_tooltips",
+            "toggles": {
+                "enchantments": false,
+                "unbreakable": false
+            }
+        }
+    ]
+}

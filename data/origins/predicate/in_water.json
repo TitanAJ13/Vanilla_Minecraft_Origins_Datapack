@@ -1,33 +1,53 @@
 {
-    "condition": "any_of",
+    "condition":"all_of",
     "terms": [
         {
-            "condition": "entity_scores",
-            "entity": "this",
-            "scores": {
-                "originsInWaterHigh": 1
+            "condition":"inverted",
+            "term": {
+                "condition":"entity_properties",
+                "entity":"this",
+                "predicate": {
+                    "vehicle": {
+                        "type": [
+                            "minecraft:boat",
+                            "minecraft:chest_boat"
+                        ]
+                    }
+                }
             }
         },
         {
-            "condition": "entity_scores",
-            "entity": "this",
-            "scores": {
-                "originsInWaterMid": 1
-            }
-        },
-        {
-            "condition": "all_of",
+            "condition": "any_of",
             "terms": [
                 {
                     "condition": "entity_scores",
                     "entity": "this",
                     "scores": {
-                        "originsInWaterLow": 1
+                        "originsInWaterHigh": 1
                     }
                 },
                 {
-                    "condition": "reference",
-                    "name": "origins:height_check"
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "originsInWaterMid": 1
+                    }
+                },
+                {
+                    "condition": "all_of",
+                    "terms": [
+                        {
+                            "condition": "entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "originsInWaterLow": 1
+                            }
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "origins:height_check"
+                        }
+                    ]
                 }
             ]
         }

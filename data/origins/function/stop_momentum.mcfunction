@@ -1,4 +1,7 @@
-$summon armor_stand ~ ~0.52 ~ {ArmorItems:[{id:"minecraft:armor_stand",count:1,components:{custom_data:{Owner:$(UUID)}}},{},{},{}],Marker:1b,Tags:["MomentumStop"]}
+$summon armor_stand ~ ~ ~ {ArmorItems:[{id:"minecraft:armor_stand",count:1,components:{custom_data:{Owner:$(UUID)}}},{},{},{}],Marker:1b,Tags:["MomentumStop"]}
+$execute as @e[tag=MomentumStop,type=armor_stand,nbt={ArmorItems:[{id:"minecraft:armor_stand",count:1,components:{"minecraft:custom_data":{Owner:$(UUID)}}},{},{},{}]}] store result score @s originsPosY run data get entity @s Pos[1] 10000
+scoreboard players operation @s originsScale *= 60 originsConstant
+$execute store result entity @e[tag=MomentumStop,type=armor_stand,nbt={ArmorItems:[{id:"minecraft:armor_stand",count:1,components:{"minecraft:custom_data":{Owner:$(UUID)}}},{},{},{}]},limit=1] Pos[1] double 0.0001 run scoreboard players operation @s originsScale += @e[tag=MomentumStop,type=armor_stand,nbt={ArmorItems:[{id:"minecraft:armor_stand",count:1,components:{"minecraft:custom_data":{Owner:$(UUID)}}},{},{},{}]},limit=1] originsPosY
 $ride @s mount @e[tag=MomentumStop,type=armor_stand,nbt={ArmorItems:[{id:"minecraft:armor_stand",count:1,components:{"minecraft:custom_data":{Owner:$(UUID)}}},{},{},{}]},limit=1]
 attribute @s minecraft:generic.gravity base set 0
 $kill @e[tag=MomentumStop,type=armor_stand,nbt={ArmorItems:[{id:"minecraft:armor_stand",count:1,components:{"minecraft:custom_data":{Owner:$(UUID)}}},{},{},{}]},limit=1]

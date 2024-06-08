@@ -1,6 +1,7 @@
 {
-    "condition": "location_check",
-    "predicate": {
-        "can_see_sky": true
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "originsCanSeeSky": 1
     }
 }

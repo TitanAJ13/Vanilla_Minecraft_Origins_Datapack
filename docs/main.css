@@ -1,5 +1,5 @@
 html {
-    background: url('side_background.png');
+    background: url('side_background.png'), rgb(80,80,80);
     text-align: left;
 }
 
@@ -36,6 +36,17 @@ body {
     line-height:100cqh;
     margin:0;
     padding:0;
+}
+
+.web-title a {
+    text-decoration: none;
+    color: gold;
+}
+
+
+.web-title a:hover {
+    text-decoration: none;
+    color: gold;
 }
 
 .article-title {

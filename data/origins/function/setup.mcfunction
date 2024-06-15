@@ -3,6 +3,8 @@ scoreboard objectives add originsPosY dummy
 scoreboard objectives add originsPosZ dummy
 scoreboard objectives add originsHeightInBlock dummy
 scoreboard objectives add originsHealth health
+scoreboard objectives add originsInWater dummy
+scoreboard objectives add originsInWaterState dummy
 scoreboard objectives add originsInWaterLow1 dummy
 scoreboard objectives add originsInWaterLow2 dummy
 scoreboard objectives add originsInWaterLow3 dummy
@@ -56,6 +58,8 @@ scoreboard objectives add originsCooldownMin dummy
 scoreboard objectives add originsCooldownSec dummy
 scoreboard objectives add originsCanSeeSky dummy
 scoreboard objectives add originsScale dummy
+scoreboard objectives add originsHeight dummy
+scoreboard objectives add originsWidth dummy
 
 
 tellraw @a {"text":"Origins Test Datapack has loaded!", "color":"gold"}

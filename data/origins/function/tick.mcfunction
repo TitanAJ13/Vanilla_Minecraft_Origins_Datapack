@@ -6,8 +6,8 @@ scoreboard players reset @a[scores={originsChoiceType=0..}] originsChoiceType
 scoreboard players enable @a[scores={originsChoiceType=..-14}] originsChoiceType
 scoreboard players reset @a[scores={originsChoiceType=..-14}] originsChoiceType
 
-execute as @a run function origins:height_in_block
-execute as @a run function origins:touching_water
+#execute as @a run function origins:height_in_block
+execute as @a run function origins:touching_water_2 with entity @s
 
 execute as @a at @s positioned ~ ~1 ~ run function origins:check_sky
 
@@ -32,4 +32,4 @@ execute as @a[tag=Feline] run function origins:feline
 
 execute as @a[tag=Fox] run function origins:fox
 
-team join Red TitanAJ
+execute as @a[tag=Merling] run function origins:merling

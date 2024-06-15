@@ -1,0 +1,1 @@
+function origins:water_gravity {BaseGravity:0.08,SinkGravity:0}

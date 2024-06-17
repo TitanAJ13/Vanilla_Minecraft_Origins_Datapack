@@ -60,6 +60,11 @@ scoreboard objectives add originsCanSeeSky dummy
 scoreboard objectives add originsScale dummy
 scoreboard objectives add originsHeight dummy
 scoreboard objectives add originsWidth dummy
+scoreboard objectives add originsAirTimer dummy
+scoreboard objectives add originsBreathingWater dummy
+scoreboard objectives add originsRespirationLevel dummy
+scoreboard objectives add originsRespirationDivider dummy
+scoreboard objectives add originsOnGround dummy
 
 
 tellraw @a {"text":"Origins Test Datapack has loaded!", "color":"gold"}

@@ -1,0 +1,12 @@
+{
+    "condition":"random_chance",
+    "chance":{
+        "type":"score",
+        "target":{
+            "type":"context",
+            "target":"this"
+        },
+        "score":"originsRespirationDivider",
+        "scale":0.000000001
+    }
+}

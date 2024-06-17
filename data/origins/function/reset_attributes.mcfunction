@@ -12,6 +12,7 @@ attribute @s minecraft:generic.attack_damage modifier remove origins:underdog_st
 attribute @s minecraft:generic.movement_speed modifier remove origins:underdog_speed
 attribute @s minecraft:player.block_interaction_range base set 4.5
 attribute @s minecraft:player.entity_interaction_range base set 3
+attribute @s minecraft:player.submerged_mining_speed base set 0.2
 tag @s remove Died
 tag @s remove Jumped
 tag @s remove Primed

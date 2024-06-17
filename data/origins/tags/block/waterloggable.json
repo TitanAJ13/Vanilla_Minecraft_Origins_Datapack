@@ -40,6 +40,10 @@
         "minecraft:small_dripleaf",
         "#minecraft:stairs",
         "#minecraft:trapdoors",
-        "#minecraft:walls"
+        "#minecraft:walls",
+        "minecraft:seagrass",
+        "minecraft:tall_seagrass",
+        "minecraft:kelp",
+        "minecraft:kelp_plant"
     ]
 }

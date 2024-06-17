@@ -17,7 +17,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 110
+                            "max": 1100
                         }
                     }
                 }
@@ -39,7 +39,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 211
+                            "max": 2110
                         }
                     }
                 }
@@ -61,7 +61,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 322
+                            "max": 3220
                         }
                     }
                 }
@@ -83,7 +83,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 443
+                            "max": 4430
                         }
                     }
                 }
@@ -105,7 +105,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 554
+                            "max": 5540
                         }
                     }
                 }
@@ -127,7 +127,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 665
+                            "max": 6650
                         }
                     }
                 }
@@ -149,7 +149,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 776
+                            "max": 7760
                         }
                     }
                 }
@@ -171,7 +171,7 @@
                     "scores": {
                         "originsHeightInBlock": {
                             "min": 0,
-                            "max": 887
+                            "max": 8870
                         }
                     }
                 }

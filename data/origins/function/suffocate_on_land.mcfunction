@@ -11,7 +11,7 @@ scoreboard players operation @s originsRespirationDivider /= @s originsRespirati
 
 execute as @s[scores={originsBreathingWater=0,originsAirTimer=-19..}] if predicate origins:random_respiration at @s unless predicate origins:in_rain run scoreboard players remove @s originsAirTimer 1
 execute as @s[scores={originsBreathingWater=0,originsAirTimer=-19..}] if predicate origins:random_respiration at @s if predicate origins:in_rain if predicate origins:random_20 run scoreboard players remove @s originsAirTimer 1
-damage @s[scores={originsBreathingWater=0,originsAirTimer=-20}] 2 minecraft:drown
+damage @s[scores={originsBreathingWater=0,originsAirTimer=-20}] 2 minecraft:generic
 scoreboard players set @s[scores={originsBreathingWater=0,originsAirTimer=-20}] originsAirTimer -1
 
 title @s[scores={originsAirTimer=300,originsBreathingWater=0}] actionbar [{"text":"\u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 "},{"text":"\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58","bold":false,"color":"aqua"}]

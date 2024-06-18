@@ -1,1 +1,1 @@
-$execute if predicate origins:in_water run damage @s $(Amount) origins:waterburn
+$execute if predicate origins:in_water run damage @s $(Amount) generic

@@ -33,3 +33,5 @@ execute as @a[tag=Feline] run function origins:feline
 execute as @a[tag=Fox] run function origins:fox
 
 execute as @a[tag=Merling] run function origins:merling
+
+execute as @a[tag=Inchling] run function origins:inchling

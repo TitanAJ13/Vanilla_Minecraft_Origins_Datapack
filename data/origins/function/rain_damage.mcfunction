@@ -1,1 +1,1 @@
-$execute at @s if predicate origins:in_rain run damage @s $(Amount) origins:waterburn
+$execute at @s if predicate origins:in_rain run damage @s $(Amount) generic

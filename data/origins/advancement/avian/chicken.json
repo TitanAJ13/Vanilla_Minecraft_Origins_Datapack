@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cooked_chicken"
+      },
+      "title": "Cannibal??",
+      "description": [
+        "Try to Eat Chicken"
+      ],
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "origins:avian/no_meat",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt":"{Tags:[\"Avian\"]}"
+                        }
+                    }
+                ],
+                "item": {
+                    "items": [
+                      "minecraft:chicken",
+                      "minecraft:cooked_chicken"
+                    ]
+                }
+            }
+      }
+    }
+  }
+  

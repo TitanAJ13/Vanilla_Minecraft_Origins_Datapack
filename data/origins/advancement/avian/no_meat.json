@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:cooked_beef"
+      },
+      "title": "Yuck!",
+      "description": [
+        "Try to Eat Meat"
+      ],
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "origins:avian/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt":"{Tags:[\"Avian\"]}"
+                        }
+                    }
+                ],
+                "item": {
+                    "items": "#origins:nonvegetarian"
+                }
+            }
+      }
+    }
+  }
+  

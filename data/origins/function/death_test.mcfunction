@@ -1,0 +1,1 @@
+return run tag @s[tag=Died] remove Died

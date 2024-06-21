@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:pumpkin_pie"
+        },
+        "title": "It was Unfertilized",
+        "description": "Make a Pumpkin Pie with an Avian Egg",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "origins:avian/egg_thrown",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:recipe_crafted",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"Avian\"]}"
+                        }
+                    }
+                ],
+                "recipe_id": "minecraft:pumpkin_pie",
+                "ingredients": [
+                    {
+                        "items": "minecraft:egg",
+                        "components": {
+                            "minecraft:custom_data": "{avian_egg:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

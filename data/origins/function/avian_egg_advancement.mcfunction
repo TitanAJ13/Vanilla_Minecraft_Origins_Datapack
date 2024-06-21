@@ -1,0 +1,2 @@
+$execute at @s anchored eyes positioned ^ ^ ^ if entity @e[type=egg,distance=..1,nbt={Item:{id:"minecraft:egg",count:1,components:{"minecraft:custom_data":{avian_egg:1b}}},Owner:$(UUID)}] run advancement grant @s only origins:avian/egg_thrown
+scoreboard players reset @s originsEggThrown

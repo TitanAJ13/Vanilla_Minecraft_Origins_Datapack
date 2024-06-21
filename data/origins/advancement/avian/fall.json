@@ -1,0 +1,44 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bone"
+      },
+      "title": "Flap Faster!",
+      "description": "Take 5 Hearts of Fall Damage",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "origins:avian/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"Avian\"]}"
+              }
+            }
+          ],
+          "damage": {
+            "taken": {
+                "min": 10
+            },
+            "blocked": false,
+            "type": {
+              "tags": [
+                {
+                  "id": "minecraft:is_fall",
+                  "expected": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+  

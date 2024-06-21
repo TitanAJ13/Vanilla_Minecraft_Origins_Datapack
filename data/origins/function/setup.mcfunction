@@ -42,6 +42,7 @@ scoreboard objectives add originsSpawnSearch2 dummy
 scoreboard objectives add originsSpawnSearch1_1 dummy
 scoreboard objectives add originsSpawnSearch2_1 dummy
 scoreboard objectives add originsDeathCount1 deathCount
+scoreboard objectives add originsDeathCount2 deathCount
 scoreboard objectives add originsFloat dummy
 scoreboard objectives add originsDamageDealt1 minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add originsDamageDealt2 dummy
@@ -64,7 +65,14 @@ scoreboard objectives add originsAirTimer dummy
 scoreboard objectives add originsBreathingWater dummy
 scoreboard objectives add originsRespirationLevel dummy
 scoreboard objectives add originsRespirationDivider dummy
-scoreboard objectives add originsOnGround dummy
+scoreboard objectives add originsKickSleepCount dummy
+scoreboard objectives add originsEggThrown minecraft.used:minecraft.egg
+
+scoreboard objectives add originsPosition1 dummy
+scoreboard objectives add originsPosition2 dummy
+scoreboard objectives add originsVelocity1 dummy
+scoreboard objectives add originsVelocity2 dummy
+scoreboard objectives add originsAcceleration dummy
 
 
 tellraw @a {"text":"Origins Test Datapack has loaded!", "color":"gold"}

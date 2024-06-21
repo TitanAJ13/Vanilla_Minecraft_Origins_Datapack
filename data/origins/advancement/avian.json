@@ -1,0 +1,55 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:feather",
+            "components": {
+                "minecraft:custom_model_data": 1
+            }
+        },
+        "title": "Mighty Eagle",
+        "description": "Complete all Avian Advancements",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "origins:kakaw",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "minecraft:player",
+                                "advancements": {
+                                    "origins:avian/root": true,
+                                    "origins:avian/beef": true,
+                                    "origins:avian/cake": true,
+                                    "origins:avian/chicken": true,
+                                    "origins:avian/egg_thrown": true,
+                                    "origins:avian/fall": true,
+                                    "origins:avian/fall_death": true,
+                                    "origins:avian/far_fall": true,
+                                    "origins:avian/fish": true,
+                                    "origins:avian/kick_sleep_5": true,
+                                    "origins:avian/kick_sleep_20": true,
+                                    "origins:avian/kick_sleep_50": true,
+                                    "origins:avian/mutton": true,
+                                    "origins:avian/no_meat": true,
+                                    "origins:avian/pie": true,
+                                    "origins:avian/porkchop": true,
+                                    "origins:avian/rabbit": true,
+                                    "origins:avian/rabbit_stew": true,
+                                    "origins:avian/rotten_flesh": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

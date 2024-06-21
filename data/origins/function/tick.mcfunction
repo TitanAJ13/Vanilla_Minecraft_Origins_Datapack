@@ -35,3 +35,10 @@ execute as @a[tag=Fox] run function origins:fox
 execute as @a[tag=Merling] run function origins:merling
 
 execute as @a[tag=Inchling] run function origins:inchling
+
+function origins:root_advancements
+
+tag @a[scores={originsDeathCount1=1..}] add Died
+scoreboard players set @a originsDeathCount1 0
+
+execute as @a run function origins:velocity_tracker

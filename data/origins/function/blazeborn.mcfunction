@@ -12,6 +12,3 @@ function origins:fire_strength {Multiplier:0.25}
 function origins:water_rain_damage {Amount:1}
 
 execute as @s run function origins:nether_spawn with entity @s
-
-tag @s[scores={originsDeathCount1=1..}] add Died
-scoreboard players set @s originsDeathCount1 0

@@ -1,0 +1,44 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:feather"
+      },
+      "title": "Kakaw!",
+      "description": [
+        "Become an ",
+        {
+          "text": "Avian",
+          "color": "#cccccc",
+          "bold": true
+        }
+      ],
+      "background": "minecraft:textures/block/light_gray_wool.png",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "origins:root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"Avian\"]}",
+                "type_specific": {
+                    "type": "minecraft:player",
+                    "advancements": {
+                        "origins:avian/root": false
+                    }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

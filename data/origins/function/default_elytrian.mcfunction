@@ -1,0 +1,10 @@
+data modify storage origins:storage Settings.Elytrian set value {}
+data modify storage origins:storage Settings.Elytrian.AirStrengthMultiplier set value 0.125
+data modify storage origins:storage Settings.Elytrian.LaunchMechanics set value {}
+data modify storage origins:storage Settings.Elytrian.LaunchMechanics.Cooldown set value 1200
+data modify storage origins:storage Settings.Elytrian.LaunchMechanics.LaunchJumpStrength set value 2
+data modify storage origins:storage Settings.Elytrian.LaunchMechanics.Item set value "minecraft:feather"
+data modify storage origins:storage Settings.Elytrian.LaunchMechanics.BaseJumpStrength set value 0.41999998688697815
+data modify storage origins:storage Settings.Elytrian.IncreasedFallDamage set value 1b
+data modify storage origins:storage Settings.Elytrian.IncreasedKineticDamage set value 1b
+data modify storage origins:storage Settings.Elytrian.ExtraChestplateSlot set value 1b

@@ -15,6 +15,15 @@
                                 }
                             }
                         }
+                    },
+                    {
+                        "condition": "value_check",
+                        "value": {
+                            "type": "storage",
+                            "storage": "origins:storage",
+                            "path": "Settings.Avian.Vegetarianism"
+                        },
+                        "range": 1
                     }
                 ],
                 "item": {

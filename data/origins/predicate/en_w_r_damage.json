@@ -1,0 +1,15 @@
+{
+    "condition": "value_check",
+    "value": {
+        "type": "storage",
+        "storage": "origins:storage",
+        "path": "Settings.Enderian.WaterDamage"
+    },
+    "range": {
+        "max": {
+            "type": "storage",
+            "storage": "origins:storage",
+            "path": "Settings.Enderian.RainDamage"
+        }
+    }
+}

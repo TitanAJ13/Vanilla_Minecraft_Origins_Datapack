@@ -3,6 +3,24 @@
         "took_hit": {
             "trigger": "minecraft:entity_hurt_player",
             "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"Elytrian\"]}"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:storage",
+                            "storage": "origins:storage",
+                            "path": "Settings.Elytrian.IncreasedKineticDamage"
+                        },
+                        "range": 1
+                    }
+                ],
                 "damage": {
                     "type": {
                         "tags": [

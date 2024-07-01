@@ -1,11 +1,24 @@
-function origins:air_strength {Multiplier:0.125}
+$function origins:air_strength {Multiplier:$(AirStrengthMultiplier)}
 
 execute unless items entity @s armor.chest elytra run tag @s add Died
 execute as @s[tag=Died] if items entity @s armor.chest #minecraft:chest_armor run function origins:drop_chestplate with entity @s
 execute as @s[tag=Died] run item replace entity @s armor.chest with elytra[minecraft:unbreakable={show_in_tooltip:0b},minecraft:custom_name="{\"text\":\"Elytrian Wings\",\"italic\":false,\"color\":\"gold\"}",minecraft:lore=["{\"text\":\"The glorious unbreakable\",\"italic\":false}","{\"text\":\"wings of an Elytrian\",\"italic\":false}","{\"text\":\"Cannot be taken off\",\"color\":\"red\",\"italic\":false}"],minecraft:enchantments={show_in_tooltip:0b,levels:{"minecraft:binding_curse":1,"minecraft:vanishing_curse":1}}]
 tag @s[tag=Died] remove Died
 
+function origins:launch with storage origins:storage Settings.Elytrian.LaunchMechanics
+
+execute if items entity @s armor.head #origins:heavy_armor run function origins:drop_helmet with entity @s
+execute if items entity @s armor.legs #origins:heavy_armor run function origins:drop_leggings with entity @s
+execute if items entity @s armor.feet #origins:heavy_armor run function origins:drop_boots with entity @s
+
+execute if predicate origins:elytrian_increased_fall run attribute @s minecraft:generic.fall_damage_multiplier base set 1.125
+execute unless predicate origins:elytrian_increased_fall run attribute @s minecraft:generic.fall_damage_multiplier base set 1
+
 execute unless items entity @s inventory.0 #origins:light_armor unless entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra",components:{"minecraft:custom_data":{NoChestplate:0b}}}]}] run function origins:replace_elytra_enchantments
+
+execute unless predicate origins:elytrian_chestplate_active run return run function origins:replace_elytra_enchantments
+
+execute if predicate origins:elytrian_chestplate_active if items entity @s inventory.0 #origins:light_armor if entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra",components:{"minecraft:custom_data":{NoChestplate:1b}}}]}] run function origins:replace_elytra_enchantments
 
 execute as @s[scores={originsDamageTaken=1..}] if items entity @s inventory.0 #origins:light_armor run tag @s add Damaged
 scoreboard players operation @s[tag=Damaged] originsDamageTaken1 = @s[tag=Damaged] originsDamageTaken
@@ -27,11 +40,3 @@ scoreboard players reset @s originsDamageTaken
 scoreboard players reset @s originsDamageTaken1
 scoreboard players reset @s originsDamageTaken2
 tag @s[tag=Damaged] remove Damaged
-
-function origins:launch {Item:"minecraft:feather",LaunchJumpStrength:2,Cooldown:1200,BaseJumpStrength:0.41999998688697815}
-
-execute if items entity @s armor.head #origins:heavy_armor run function origins:drop_helmet with entity @s
-execute if items entity @s armor.legs #origins:heavy_armor run function origins:drop_leggings with entity @s
-execute if items entity @s armor.feet #origins:heavy_armor run function origins:drop_boots with entity @s
-
-attribute @s minecraft:generic.fall_damage_multiplier base set 1.25

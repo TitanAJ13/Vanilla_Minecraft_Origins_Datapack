@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:storage",
+        "storage": "origins:storage",
+        "path": "Settings.Elytrian.ExtraChestplateSlot"
+    },
+    "range": 1
+}

@@ -1,1 +1,0 @@
-$execute at @s anchored feet run summon minecraft:item ~ ~0.5 ~ {Item:{id:"minecraft:egg",count:1,components:{item_name:"{\"text\":\"Avian Egg\",\"italic\":false}",custom_data:{avian_egg:1b}}},PickupDelay:40s,Thrower:$(UUID)}

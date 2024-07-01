@@ -7,8 +7,9 @@ attribute @s[tag=SpawnFound] minecraft:generic.gravity base set 0.08
 attribute @s[tag=SpawnFound] minecraft:generic.jump_strength base set 0.41999998688697815
 attribute @s[tag=SpawnFound] minecraft:generic.movement_speed base set 0.100000001490116119384765625
 
-function origins:fire_strength {Multiplier:0.25}
+$function origins:fire_strength {Multiplier:$(FireStrengthMultiplier)}
 
-function origins:water_rain_damage {Amount:1}
+$function origins:water_rain_damage {Amount:$(WaterDamage)}
 
-execute as @s run function origins:nether_spawn with entity @s
+$execute if score 0 originsConstant matches $(NetherSpawn) run tag @s remove Died
+$execute if score 1 originsConstant matches $(NetherSpawn) as @s run function origins:nether_spawn with entity @s

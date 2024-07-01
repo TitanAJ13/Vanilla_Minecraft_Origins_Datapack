@@ -1,0 +1,9 @@
+{
+    "condition": "value_check",
+    "value": {
+        "type": "storage",
+        "storage": "origins:storage",
+        "path": "Settings.Blazeborn.NetherSpawn"
+    },
+    "range": 1
+}

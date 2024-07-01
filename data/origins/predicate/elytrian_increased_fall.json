@@ -1,0 +1,9 @@
+{
+    "condition": "value_check",
+    "value": {
+        "type": "storage",
+        "storage": "origins:storage",
+        "path": "Settings.Elytrian.IncreasedFallDamage"
+    },
+    "range": 1
+}

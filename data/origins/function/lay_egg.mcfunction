@@ -1,1 +1,2 @@
-$execute at @s anchored feet run summon minecraft:item ~ ~0.5 ~ {Item:{id:"minecraft:egg",count:1},PickupDelay:40s,Thrower:$(UUID)}
+$execute at @s anchored feet run summon minecraft:item ~ ~0.5 ~ {Item:{id:"minecraft:egg",count:$(EggCount)},PickupDelay:40s,Tags:["LaidEgg"]}
+execute at @s run data modify entity @e[type=item,tag=LaidEgg,nbt={Age:0s},distance=..1,limit=1] Thrower set from entity @s UUID

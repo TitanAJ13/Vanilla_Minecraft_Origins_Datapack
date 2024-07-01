@@ -1,0 +1,1 @@
+$execute unless data storage origins:storage Players[{UUID:$(UUID)}] run data modify storage origins:storage Players append value {UUID:$(UUID)}

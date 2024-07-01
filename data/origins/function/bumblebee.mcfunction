@@ -1,9 +1,9 @@
-execute as @s[scores={originsFloat=0}] run function origins:fall_slowly {InitialGravity:0.08,InitialJump:0.41999998688697815,InitialFallDamage:1,InitialFallHeight:3,StopInRain:1,SlowGravity:0.04,SlowJump:0.30917,SlowFallDamage:0.75,SlowFallHeight:6}
-function origins:float {DescendAcceleration:0.02,StopInRain:1,StopOnFire:0,StopInDay:0,StopInNight:0}
+execute as @s[scores={originsFloat=0}] run function origins:fall_slowly with storage origins:storage Settings.Bumblebee.FallMechanics
+function origins:float with storage origins:storage Settings.Bumblebee.FloatMechanics
 
-function origins:inflict_effect {Id:"minecraft:poison"}
+$function origins:inflict_effect {Id:"minecraft:poison",Duration:$(PoisonDuration)}
 
-function origins:water_strength {Multiplier:-0.25}
+$function origins:water_strength {Multiplier:$(WaterStrengthMultiplier)}
 
 attribute @s minecraft:generic.scale base set 0.8
 

@@ -1,0 +1,20 @@
+execute unless data storage origins:storage Settings.Bumblebee run data modify storage origins:storage Settings.Bumblebee set value {}
+execute unless data storage origins:storage Settings.Bumblebee.PoisonDuration run data modify storage origins:storage Settings.Bumblebee.PoisonDuration set value 2
+execute unless data storage origins:storage Settings.Bumblebee.WaterStrengthMultiplier run data modify storage origins:storage Settings.Bumblebee.WaterStrengthMultiplier set value -0.25
+execute unless data storage origins:storage Settings.Bumblebee.FloatMechanics run data modify storage origins:storage Settings.Bumblebee.FloatMechanics set value {}
+execute unless data storage origins:storage Settings.Bumblebee.FloatMechanics.DescendAcceleration run data modify storage origins:storage Settings.Bumblebee.FloatMechanics.DescendAcceleration set value 0.02
+execute unless data storage origins:storage Settings.Bumblebee.FloatMechanics.StopInRain run data modify storage origins:storage Settings.Bumblebee.FloatMechanics.StopInRain set value 1b
+execute unless data storage origins:storage Settings.Bumblebee.FloatMechanics.StopOnFire run data modify storage origins:storage Settings.Bumblebee.FloatMechanics.StopOnFire set value 0b
+execute unless data storage origins:storage Settings.Bumblebee.FloatMechanics.StopInDay run data modify storage origins:storage Settings.Bumblebee.FloatMechanics.StopInDay set value 0b
+execute unless data storage origins:storage Settings.Bumblebee.FloatMechanics.StopInNight run data modify storage origins:storage Settings.Bumblebee.FloatMechanics.StopInNight set value 0b
+
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics run data modify storage origins:storage Settings.Bumblebee.FallMechanics set value {}
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.InitialGravity run data modify storage origins:storage Settings.Bumblebee.FallMechanics.InitialGravity set value 0.08
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.InitialJump run data modify storage origins:storage Settings.Bumblebee.FallMechanics.InitialJump set value 0.41999998688697815
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.InitialFallDamage run data modify storage origins:storage Settings.Bumblebee.FallMechanics.InitialFallDamage set value 1.0
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.InitialFallHeight run data modify storage origins:storage Settings.Bumblebee.FallMechanics.InitialFallHeight set value 3.0
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.StopInRain run data modify storage origins:storage Settings.Bumblebee.FallMechanics.StopInRain set value 1b
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.SlowGravity run data modify storage origins:storage Settings.Bumblebee.FallMechanics.SlowGravity set value 0.04
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.SlowJump run data modify storage origins:storage Settings.Bumblebee.FallMechanics.SlowJump set value 0.30917
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.SlowFallDamage run data modify storage origins:storage Settings.Bumblebee.FallMechanics.SlowFallDamage set value 0.5
+execute unless data storage origins:storage Settings.Bumblebee.FallMechanics.SlowFallHeight run data modify storage origins:storage Settings.Bumblebee.FallMechanics.SlowFallHeight set value 6.0

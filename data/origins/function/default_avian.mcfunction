@@ -1,0 +1,15 @@
+execute unless data storage origins:storage Settings.Avian run data modify storage origins:storage Settings.Avian set value {}
+execute unless data storage origins:storage Settings.Avian.SleepHeight run data modify storage origins:storage Settings.Avian.SleepHeight set value 86
+execute unless data storage origins:storage Settings.Avian.Vegetarianism run data modify storage origins:storage Settings.Avian.Vegetarianism set value 1b
+execute unless data storage origins:storage Settings.Avian.MovementSpeed run data modify storage origins:storage Settings.Avian.MovementSpeed set value 0.125
+execute unless data storage origins:storage Settings.Avian.EggCount run data modify storage origins:storage Settings.Avian.EggCount set value 1
+execute unless data storage origins:storage Settings.Avian.FallMechanics run data modify storage origins:storage Settings.Avian.FallMechanics set value {}
+execute unless data storage origins:storage Settings.Avian.FallMechanics.InitialGravity run data modify storage origins:storage Settings.Avian.FallMechanics.InitialGravity set value 0.08
+execute unless data storage origins:storage Settings.Avian.FallMechanics.InitialJump run data modify storage origins:storage Settings.Avian.FallMechanics.InitialJump set value 0.41999998688697815
+execute unless data storage origins:storage Settings.Avian.FallMechanics.InitialFallDamage run data modify storage origins:storage Settings.Avian.FallMechanics.InitialFallDamage set value 1.0
+execute unless data storage origins:storage Settings.Avian.FallMechanics.InitialFallHeight run data modify storage origins:storage Settings.Avian.FallMechanics.InitialFallHeight set value 3.0
+execute unless data storage origins:storage Settings.Avian.FallMechanics.StopInRain run data modify storage origins:storage Settings.Avian.FallMechanics.StopInRain set value 0b
+execute unless data storage origins:storage Settings.Avian.FallMechanics.SlowGravity run data modify storage origins:storage Settings.Avian.FallMechanics.SlowGravity set value 0.04
+execute unless data storage origins:storage Settings.Avian.FallMechanics.SlowJump run data modify storage origins:storage Settings.Avian.FallMechanics.SlowJump set value 0.30917
+execute unless data storage origins:storage Settings.Avian.FallMechanics.SlowFallDamage run data modify storage origins:storage Settings.Avian.FallMechanics.SlowFallDamage set value 0.5
+execute unless data storage origins:storage Settings.Avian.FallMechanics.SlowFallHeight run data modify storage origins:storage Settings.Avian.FallMechanics.SlowFallHeight set value 6.0

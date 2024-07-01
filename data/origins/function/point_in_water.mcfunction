@@ -1,3 +1,4 @@
+tag @s add WaterChecked
 execute unless predicate origins:in_water_type run return 0
 execute if predicate origins:in_water_type store result score @s originsPosY run data get entity @s Pos[1] 10000
 scoreboard players operation @s originsHeightInBlock = @s originsPosY

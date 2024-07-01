@@ -14,6 +14,7 @@ scoreboard objectives add originsInWaterMid dummy
 scoreboard objectives add originsInWaterHigh dummy
 scoreboard objectives add originsConstant dummy
 scoreboard players set -1 originsConstant -1
+scoreboard players set 0 originsConstant 0
 scoreboard players set 1 originsConstant 1
 scoreboard players set 3 originsConstant 3
 scoreboard players set 5 originsConstant 5
@@ -67,6 +68,19 @@ scoreboard objectives add originsRespirationLevel dummy
 scoreboard objectives add originsRespirationDivider dummy
 scoreboard objectives add originsKickSleepCount dummy
 scoreboard objectives add originsEggThrown minecraft.used:minecraft.egg
+
+team add originsDeAggroEndermen
+
+execute unless data storage origins:storage Settings run function origins:default_settings
+execute unless data storage origins:storage Settings.Avian run function origins:default_avian
+execute unless data storage origins:storage Settings.Blazeborn run function origins:default_blazeborn
+execute unless data storage origins:storage Settings.Bumblebee run function origins:default_bumblebee
+execute unless data storage origins:storage Settings.Elytrian run function origins:default_elytrian
+execute unless data storage origins:storage Settings.Enderian run function origins:default_enderian
+execute unless data storage origins:storage Settings.Feline run function origins:default_feline
+execute unless data storage origins:storage Settings.Fox run function origins:default_fox
+execute unless data storage origins:storage Settings.Inchling run function origins:default_inchling
+execute unless data storage origins:storage Settings.Merling run function origins:default_merling
 
 scoreboard objectives add originsPosition1 dummy
 scoreboard objectives add originsPosition2 dummy

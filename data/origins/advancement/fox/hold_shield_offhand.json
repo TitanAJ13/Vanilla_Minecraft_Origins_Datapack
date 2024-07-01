@@ -29,6 +29,15 @@
                                 }
                             }
                         }
+                    },
+                    {
+                        "condition": "value_check",
+                        "value": {
+                            "type": "storage",
+                            "storage": "origins:storage",
+                            "path": "Settings.Fox.CanHoldShields"
+                        },
+                        "range": 0
                     }
                 ],
                 "item": {

@@ -1,17 +1,18 @@
-$execute at @s anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:["WaterBreatheCheck"],data:{Owner:$(UUID)}}
-$execute store result score @s originsBreathingWater as @e[tag=WaterBreatheCheck,type=marker,nbt={data:{Owner:$(UUID)}}] at @s run function origins:point_in_water
-kill @e[tag=WaterBreatheCheck,type=marker]
+execute at @s anchored eyes positioned ^ ^ ^ store result score @s originsBreathingWater summon marker at @s run function origins:point_in_water
+kill @e[tag=WaterChecked,type=marker]
 scoreboard players add @s[scores={originsBreathingWater=1,originsAirTimer=..299}] originsAirTimer 5
 execute unless score @s originsAirTimer matches -20..300 run scoreboard players set @s originsAirTimer 300
 
-execute store result score @s originsRespirationLevel run attribute @s minecraft:generic.oxygen_bonus get
+$execute if score 1 originsConstant matches $(AffectedByRespiration) store result score @s originsRespirationLevel run attribute @s minecraft:generic.oxygen_bonus get
+$execute if score 0 originsConstant matches $(AffectedByRespiration) run scoreboard players set @s originsRespirationLevel 0
 scoreboard players add @s originsRespirationLevel 1
 scoreboard players set @s originsRespirationDivider 1000000000
 scoreboard players operation @s originsRespirationDivider /= @s originsRespirationLevel
 
 execute as @s[scores={originsBreathingWater=0,originsAirTimer=-19..}] if predicate origins:random_respiration at @s unless predicate origins:in_rain run scoreboard players remove @s originsAirTimer 1
-execute as @s[scores={originsBreathingWater=0,originsAirTimer=-19..}] if predicate origins:random_respiration at @s if predicate origins:in_rain if predicate origins:random_20 run scoreboard players remove @s originsAirTimer 1
-damage @s[scores={originsBreathingWater=0,originsAirTimer=-20}] 2 minecraft:generic
+$execute as @s[scores={originsBreathingWater=0,originsAirTimer=-19..}] if predicate origins:random_respiration at @s if score 1 originsConstant matches $(BetterInRain) if predicate origins:in_rain if predicate {"condition":"random_chance","chance": $(RainOxygenUseChance)} run scoreboard players remove @s originsAirTimer 1
+$execute as @s[scores={originsBreathingWater=0,originsAirTimer=-19..}] if predicate origins:random_respiration at @s if score 0 originsConstant matches $(BetterInRain) if predicate origins:in_rain run scoreboard players remove @s originsAirTimer 1
+$damage @s[scores={originsBreathingWater=0,originsAirTimer=-20}] $(SuffocationDamage) minecraft:generic
 scoreboard players set @s[scores={originsBreathingWater=0,originsAirTimer=-20}] originsAirTimer -1
 
 title @s[scores={originsAirTimer=300,originsBreathingWater=0}] actionbar [{"text":"\u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 "},{"text":"\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58\u2b58","bold":false,"color":"aqua"}]

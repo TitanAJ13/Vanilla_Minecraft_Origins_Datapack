@@ -15,6 +15,15 @@
                                 }
                             }
                         }
+                    },
+                    {
+                        "condition": "value_check",
+                        "value": {
+                            "type": "storage",
+                            "storage": "origins:storage",
+                            "path": "Settings.Feline.Pescatarianism"
+                        },
+                        "range": 1
                     }
                 ],
                 "item": {

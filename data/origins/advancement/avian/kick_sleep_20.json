@@ -5,7 +5,7 @@
       },
       "title": "Determined Much?",
       "description": [
-        "Try to Sleep Below y=86 20 Times"
+        {"text":"Try to Sleep Below Avian Sleep Height 20 Times"}
       ],
       "show_toast": true,
       "announce_to_chat": true,

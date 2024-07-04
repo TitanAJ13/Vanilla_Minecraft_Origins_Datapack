@@ -5,7 +5,7 @@
       },
       "title": "It's Not Going to Kill You",
       "description": [
-        "Try to Sleep Below y=86 50 Times"
+        {"text":"Try to Sleep Below Avian Sleep Height 50 Times"}
       ],
       "show_toast": true,
       "announce_to_chat": true,

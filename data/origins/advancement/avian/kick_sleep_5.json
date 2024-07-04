@@ -5,7 +5,7 @@
       },
       "title": "You Need Fresh Air",
       "description": [
-        "Try to Sleep Below y=86 Five Times"
+        {"text":"Try to Sleep Below Avian Sleep Height Five Times"}
       ],
       "show_toast": true,
       "announce_to_chat": true,

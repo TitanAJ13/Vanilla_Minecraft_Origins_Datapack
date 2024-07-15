@@ -1,0 +1,17 @@
+-Update README
+-Fix inflict_effect raycast for small hitboxes
+-Make inflict_effect raycast recursive based on entity_interaction_range
+-Add new Spawning mechanics
+-Make new Spawn Obstruction mechanics
+-Populate wiki pages
+-Create Blazeborn Advancements
+-Create Bumblebee Advancements
+-Create Elytrian Advancements
+-Create Enderian Advancements
+-Create Feline Advancements
+-Create Fox Advancements
+-Create Human Advancements
+-Create Inchling Advancements
+-Create Merling Advancements
+-Create Origin Selection Crafting Recipe
+-Fix originsChoiceType scoreboard mechanics

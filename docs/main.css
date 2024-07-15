@@ -20,11 +20,11 @@ body {
     height:10cqw;
     container-type:size;
 
-    div {
+    & div {
         height: 100cqh;
         container-type: size;
 
-        h1 {
+        & h1 {
             color:gold;
             text-align: center;
             font-family: 'Courier New', Courier, monospace;
@@ -34,12 +34,12 @@ body {
             margin:0;
             padding:0;
 
-            a {
+            & a {
                 text-decoration: none;
                 color: gold;
             }
 
-            a:hover {
+            & a:hover {
                 text-decoration: none;
                 color: gold;
             }
@@ -53,11 +53,11 @@ body {
     height: 5cqw;
     container-type:size;
 
-    a {
+    & a {
         font-family: Arial, Helvetica, sans-serif;
         height:100cqh;
         line-height: 100cqh;
-        width: 25cqw;
+        width: 20cqw;
         background-color: #7b287d;
         margin: 0 auto;
         padding: 0;
@@ -69,7 +69,7 @@ body {
         text-decoration: none;
     }
 
-    a:hover {
+    & a:hover {
         color:aqua;
         background-image:radial-gradient(ellipse at 50% 90%, #b654b8 5%,#7b287d 70%);
         text-decoration: none;
@@ -90,6 +90,34 @@ body {
     container-type: inline-size;
 }
 
+section.welcome {
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float:left;
+    margin: auto;
+    width: 90cqw;
+    container-type:inline-size;
+    font-size:12pt;
+
+    & p {
+        padding: 0;
+        color: #FFF;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:12pt;
+        text-align:center;
+    }
+
+    & h1 {
+        font-size: 250%;
+        text-align:center;
+    }
+}
+@container (min-width: 800px) {
+    section.welcome p {
+        font-size: 2cqw;
+    }
+}
+
 section.abstract {
     color: #FFF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -101,14 +129,14 @@ section.abstract {
     container-type:inline-size;
     font-size:12pt;
 
-    p {
+    & p {
         padding: 0;
         color: #FFF;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size:12pt;
     }
 
-    h1 {
+    & h1 {
         font-size: 250%;
         text-align:center;
     }
@@ -132,22 +160,22 @@ section.abstract {
     container-type:inline-size;
     font-size:10pt;
     
-    p {
+    & p {
         text-align:center;
         padding:0;
     }
     
-    ul {
+    & ul {
         list-style-position: inside;
         padding-left:5px;
     }
 
-    a {
+    & a {
         text-decoration: none;
         color: white;
     }
     
-    a:hover {
+    & a:hover {
         text-decoration: underline;
         color:white;
     }
@@ -207,16 +235,16 @@ a:hover {
     list-style-position: inside;
     margin-top:0;
 
-    li {
+    & li {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12pt;
         margin-left: 0;
 
-        div {
+        & div {
             display: flex;
             container-type: inline-size;
 
-            h1 {
+            & h1 {
                 margin:0;
                 padding:0;
                 float:left;
@@ -225,19 +253,19 @@ a:hover {
                 text-wrap: nowrap;
             }
 
-            h1::before {
+            & h1::before {
                 content:'\2022';
                 margin: 1rem;
             }
 
-            h1::after {
+            & h1::after {
                 content:'\2014';
                 margin-left: 0.5rem;
                 display:inline-block;
             }
 
-            p {
-                margin-top:1px;
+            & p {
+                margin-top:-1px;
                 margin-left: 0.5rem;
                 padding:0;
                 float:right;
@@ -252,7 +280,7 @@ footer {
     height:140px;
     container-type:inline-size;
 
-    p {
+    & p {
         margin: 1rem auto;
         font-family:'Courier New', Courier, monospace;
         font-size:14pt;
@@ -267,12 +295,12 @@ footer {
     display:flex;
     margin:auto;
 
-    p {
+    & p {
         margin: 1rem auto;
         padding:0;
     }
 
-    p::after {
+    & p::after {
         content:"This Section is In Progress";
         font-weight: bold;
     }
@@ -334,14 +362,14 @@ code {
     background-size: contain;
     background-repeat: no-repeat;
 
-    span {
+    & span {
         display: inline-block;
         position: relative;
         width: 32px;
         height:32px;
         margin: 9.5px;
 
-        img {
+        & img {
             width: 32px;
             height: 32px;
             image-rendering: pixelated;
@@ -364,7 +392,7 @@ code {
 }
 
 .tree-list {
-    ul {
+    & ul {
         padding: 0;
         padding-left: 1rem;
         margin: 0;
@@ -374,26 +402,26 @@ code {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    li {
+    & li {
         list-style-type: none;
         border-left: 2px solid #FFF;
         margin-left: 24px;
     }
 
-    li div {
+    & li div {
         padding-left: 1em;
         position: relative;
         display: flex;
         container-type: inline-size;
     }
 
-    ul div:first-child {
+    & ul div:first-child {
         position: relative;
         display: flex;
         container-type: inline-size;
     }
 
-    li div::before {
+    & li div::before {
         content:'';
         position: absolute;
         top: 0;
@@ -405,12 +433,12 @@ code {
         border-right: 0 none transparent;
     }
 
-    ul > li:last-child {
+    & ul > li:last-child {
         border-left: 2px solid transparent;
     }
 
-    .dl-item {
-        h1 {
+    & .dl-item {
+        & h1 {
             margin:auto 0;
             margin-left: 5px;
             padding:0;
@@ -421,17 +449,60 @@ code {
             text-wrap: nowrap;
         }
 
-        h1::after {
+        & h1::after {
             content:'\2014';
             margin: 0.5rem;
             display:inline-block;
         }
 
-        p {
+        & p {
             margin:auto 0;
             padding:0;
             float:right;
             line-height:42px;
+        }
+    }
+}
+
+.block-container {
+    display:flex;
+    container-type: inline-size;
+    margin: auto;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    & div {
+        width: 30cqw;
+        max-width: 256px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid white;
+        background-color: #4d4d4d;
+        float: left;
+        text-align: center;
+
+        & p {
+            padding: 0.5rem;
+            font-size:12pt;
+            margin: 0;
+        }
+
+        & h1 {
+            border: 0;
+            margin: 0;
+            font-size: 14pt;
+        }
+
+        & img {
+            margin: 1rem auto;
         }
     }
 }

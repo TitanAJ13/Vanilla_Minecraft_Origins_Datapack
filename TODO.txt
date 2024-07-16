@@ -1,6 +1,3 @@
--Update README
--Fix inflict_effect raycast for small hitboxes
--Make inflict_effect raycast recursive based on entity_interaction_range
 -Add new Spawning mechanics
 -Make new Spawn Obstruction mechanics
 -Populate wiki pages

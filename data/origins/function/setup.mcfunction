@@ -24,6 +24,7 @@ scoreboard players set 20 originsConstant 20
 scoreboard players set 40 originsConstant 40
 scoreboard players set 60 originsConstant 60
 scoreboard players set 120 originsConstant 120
+scoreboard players set 125 originsConstant 125
 scoreboard players set 169 originsConstant 169
 scoreboard players set 160 originsConstant 160
 scoreboard players set 256 originsConstant 256
@@ -48,6 +49,8 @@ scoreboard objectives add originsFloat dummy
 scoreboard objectives add originsDamageDealt1 minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add originsDamageDealt2 dummy
 scoreboard objectives add originsInflictEffectPriority dummy
+scoreboard objectives add originsInflictEffectRange dummy
+scoreboard objectives add originsInflictEffectCount dummy
 scoreboard objectives add originsDamageTaken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add originsDamageTaken1 dummy
 scoreboard objectives add originsDamageTaken2 dummy

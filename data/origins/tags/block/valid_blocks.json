@@ -232,6 +232,7 @@
         "minecraft:observer",
         "minecraft:tnt",
         "minecraft:spawner",
-        "minecraft:trial_spawner"
+        "minecraft:trial_spawner",
+        "minecraft:glowstone"
     ]
 }

@@ -71,6 +71,9 @@ scoreboard objectives add originsRespirationLevel dummy
 scoreboard objectives add originsRespirationDivider dummy
 scoreboard objectives add originsKickSleepCount dummy
 scoreboard objectives add originsEggThrown minecraft.used:minecraft.egg
+scoreboard objectives add originsSecondarySpawnUses dummy
+scoreboard objectives add originsDefaultSpawnBase dummy
+scoreboard objectives add originsStoredGamemode dummy
 
 team add originsDeAggroEndermen
 

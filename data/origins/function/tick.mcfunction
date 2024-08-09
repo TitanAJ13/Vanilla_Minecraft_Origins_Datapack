@@ -38,9 +38,6 @@ execute as @a[tag=Merling] run function origins:merling with storage origins:sto
 
 function origins:root_advancements
 
-tag @a[scores={originsDeathCount1=1..}] add Died
-scoreboard players set @a originsDeathCount1 0
-
 execute as @a run function origins:velocity_tracker
 
 execute unless data storage origins:storage Players run data modify storage origins:storage Players set value []
@@ -48,3 +45,9 @@ execute as @a run function origins:store_player with entity @s
 execute as @a run function origins:store_origin with entity @s
 
 function origins:fix_settings
+
+tag @a[scores={originsDeathCount1=1..}] add Died
+scoreboard players set @a originsDeathCount1 0
+
+execute as @e[type=player,tag=Died] run function origins:respawn with entity @s
+execute as @a[tag=SearchingDefault] at @s run function origins:default_spawn_recurse with entity @s

@@ -1,0 +1,81 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "offsetY": -1,
+                    "predicate": {
+                        "block": {
+                            "blocks": "#origins:valid_blocks"
+                        }
+                    }
+                },
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "#origins:air_types"
+                        }
+                    }
+                },
+                {
+                    "condition": "location_check",
+                    "offsetY": 1,
+                    "predicate": {
+                        "block": {
+                            "blocks": "#origins:air_types"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "offsetY": -1,
+                    "predicate": {
+                        "block": {
+                            "blocks": "#origins:valid_blocks"
+                        },
+                        "position": {
+                            "y": 318
+                        }
+                    }
+                },
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "#origins:air_types"
+                        },
+                        "position": {
+                            "y": 319
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "offsetY": -1,
+                    "predicate": {
+                        "block": {
+                            "blocks": "#origins:valid_blocks"
+                        },
+                        "position": {
+                            "y": 319
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

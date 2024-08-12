@@ -1,5 +1,7 @@
 #Avian
 
+function origins:default_avian
+
 execute store result storage origins:storage Settings.Avian.SleepHeight int 1 run data get storage origins:storage Settings.Avian.SleepHeight
 execute store result storage origins:storage Settings.Avian.Vegetarianism byte 1 run data get storage origins:storage Settings.Avian.Vegetarianism
 
@@ -36,6 +38,8 @@ execute if score ValueCheck originsConstant matches 0 store result storage origi
 
 #Blazeborn
 
+function origins:default_blazeborn
+
 execute store result score ValueCheck originsConstant run function origins:number_test_storage {Storage:"origins:storage",Path:"Settings.Blazeborn.FireStrengthMultiplier"}
 execute if score ValueCheck originsConstant matches 0 store result storage origins:storage Settings.Blazeborn.FireStrengthMultiplier double 1 run data get storage origins:storage Settings.Blazeborn.FireStrengthMultiplier
 
@@ -45,6 +49,8 @@ execute if score ValueCheck originsConstant matches 0 store result storage origi
 execute store result storage origins:storage Settings.Blazeborn.NetherSpawn byte 1 run data get storage origins:storage Settings.Blazeborn.NetherSpawn
 
 #Bumblebee
+
+function origins:default_bumblebee
 
 execute store result storage origins:storage Settings.Bumblebee.PoisonDuration int 1 run data get storage origins:storage Settings.Bumblebee.PoisonDuration
 
@@ -87,6 +93,8 @@ execute store result storage origins:storage Settings.Bumblebee.FloatMechanics.S
 
 #Elytrian
 
+function origins:default_elytrian
+
 execute store result score ValueCheck originsConstant run function origins:number_test_storage {Storage:"origins:storage",Path:"Settings.Elytrian.AirStrengthMultiplier"}
 execute if score ValueCheck originsConstant matches 0 store result storage origins:storage Settings.Elytrian.AirStrengthMultiplier double 1 run data get storage origins:storage Settings.Elytrian.AirStrengthMultiplier
 
@@ -105,6 +113,8 @@ data modify storage origins:storage Settings.Elytrian.LaunchMechanics.Item set s
 
 #Enderian
 
+function origins:default_enderian
+
 execute store result storage origins:storage Settings.Enderian.NoPearlDamage byte 1 run data get storage origins:storage Settings.Enderian.NoPearlDamage
 execute store result storage origins:storage Settings.Enderian.CanUseTeams byte 1 run data get storage origins:storage Settings.Enderian.CanUseTeams
 
@@ -119,6 +129,8 @@ execute if score ValueCheck originsConstant matches 0 store result storage origi
 
 #Feline
 
+function origins:default_feline
+
 execute store result score ValueCheck originsConstant run function origins:number_test_storage {Storage:"origins:storage",Path:"Settings.Feline.SprintJumpStrength"}
 execute if score ValueCheck originsConstant matches 0 store result storage origins:storage Settings.Feline.SprintJumpStrength double 1 run data get storage origins:storage Settings.Feline.SprintJumpStrength
 
@@ -126,6 +138,8 @@ execute store result storage origins:storage Settings.Feline.SprintJumpCooldown 
 execute store result storage origins:storage Settings.Feline.Pescatarianism byte 1 run data get storage origins:storage Settings.Feline.Pescatarianism
 
 #Fox
+
+function origins:default_fox
 
 execute store result score ValueCheck originsConstant run function origins:number_test_storage {Storage:"origins:storage",Path:"Settings.Fox.MovementSpeed"}
 execute if score ValueCheck originsConstant matches 0 store result storage origins:storage Settings.Fox.MovementSpeed double 1 run data get storage origins:storage Settings.Fox.MovementSpeed
@@ -140,6 +154,8 @@ execute store result storage origins:storage Settings.Fox.UnderdogStartHealth in
 execute store result storage origins:storage Settings.Fox.CanHoldShields byte 1 run data get storage origins:storage Settings.Fox.CanHoldShields
 
 #Inchling
+
+function origins:default_inchling
 
 execute store result score ValueCheck originsConstant run function origins:number_test_storage {Storage:"origins:storage",Path:"Settings.Inchling.AttackSpeed"}
 execute if score ValueCheck originsConstant matches 0 store result storage origins:storage Settings.Inchling.AttackSpeed double 1 run data get storage origins:storage Settings.Inchling.AttackSpeed
@@ -161,6 +177,8 @@ execute if score ValueCheck originsConstant matches 0 store result storage origi
 
 #Merling
 
+function origins:default_merling
+
 execute store result score ValueCheck originsConstant run function origins:number_test_storage {Storage:"origins:storage",Path:"Settings.Merling.SinkGravity"}
 execute if score ValueCheck originsConstant matches 0 store result storage origins:storage Settings.Merling.SinkGravity double 1 run data get storage origins:storage Settings.Merling.SinkGravity
 
@@ -173,3 +191,26 @@ execute if score ValueCheck originsConstant matches 0 store result storage origi
 
 execute store result score ValueCheck originsConstant run function origins:number_test_storage {Storage:"origins:storage",Path:"Settings.Merling.SuffocationMechanics.SuffocationDamage"}
 execute if score ValueCheck originsConstant matches 0 store result storage origins:storage Settings.Merling.SuffocationMechanics.SuffocationDamage double 1 run data get storage origins:storage Settings.Merling.SuffocationMechanics.SuffocationDamage
+
+#DimensionDictionary
+
+execute unless data storage origins:storage Settings.DimensionDictionary run data modify storage origins:storage Settings.DimensionDictionary set value {}
+#execute unless data storage origins:storage Settings.DimDictIterator run data modify storage origins:storage Settings.DimensionDictionary set value 0
+data modify storage origins:storage Settings.DimensionDictionary.0 set value "minecraft:overworld"
+data modify storage origins:storage Settings.DimensionDictionary.1 set value "minecraft:the_nether"
+data modify storage origins:storage Settings.DimensionDictionary.2 set value "minecraft:the_end"
+execute unless data storage origins:storage Settings.DimensionDictionary.3 run data modify storage origins:storage Settings.DimensionDictionary.3 set value ""
+execute unless data storage origins:storage Settings.DimensionDictionary.4 run data modify storage origins:storage Settings.DimensionDictionary.4 set value ""
+execute unless data storage origins:storage Settings.DimensionDictionary.5 run data modify storage origins:storage Settings.DimensionDictionary.5 set value ""
+execute unless data storage origins:storage Settings.DimensionDictionary.6 run data modify storage origins:storage Settings.DimensionDictionary.6 set value ""
+execute unless data storage origins:storage Settings.DimensionDictionary.7 run data modify storage origins:storage Settings.DimensionDictionary.7 set value ""
+execute unless data storage origins:storage Settings.DimensionDictionary.8 run data modify storage origins:storage Settings.DimensionDictionary.8 set value ""
+execute unless data storage origins:storage Settings.DimensionDictionary.9 run data modify storage origins:storage Settings.DimensionDictionary.9 set value ""
+
+#DimensionData
+
+execute unless data storage origins:storage Settings.DimensionData run data modify storage origins:storage Settings.DimensionData set value {}
+execute unless data storage origins:storage Settings.DimensionData."minecraft:overworld" run data modify storage origins:storage Settings.DimensionData."minecraft:overworld" set value {Min:-64,Max:319}
+execute unless data storage origins:storage Settings.DimensionData."minecraft:the_nether" run data modify storage origins:storage Settings.DimensionData."minecraft:the_nether" set value {Min:32,Max:127}
+execute unless data storage origins:storage Settings.DimensionData."minecraft:the_end" run data modify storage origins:storage Settings.DimensionData."minecraft:the_end" set value {Min:-64,Max:319}
+function origins:fix_dim_settings with storage origins:storage Settings.DimensionDictionary

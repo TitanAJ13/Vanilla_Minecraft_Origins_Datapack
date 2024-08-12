@@ -40,3 +40,5 @@ scoreboard players reset @s originsDamageTaken
 scoreboard players reset @s originsDamageTaken1
 scoreboard players reset @s originsDamageTaken2
 tag @s[tag=Damaged] remove Damaged
+
+function origins:inflict_effect {Id:"minecraft:levitation",Duration:5}

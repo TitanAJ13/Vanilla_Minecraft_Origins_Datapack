@@ -233,6 +233,17 @@
         "minecraft:tnt",
         "minecraft:spawner",
         "minecraft:trial_spawner",
-        "minecraft:glowstone"
+        "minecraft:glowstone",
+        "minecraft:bedrock",
+        "minecraft:command_block",
+        "minecraft:repeating_command_block",
+        "minecraft:chain_command_block",
+        "minecraft:structure_block",
+        "minecraft:jigsaw",
+        "minecraft:barrier",
+        "minecraft:azalea",
+        "minecraft:flowering_azalea",
+        "minecraft:piston",
+        "minecraft:sticky_piston"
     ]
 }

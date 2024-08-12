@@ -2,3 +2,4 @@ $execute store result storage origins:storage Players[{UUID:$(UUID)}].DefaultSpa
 $execute store result storage origins:storage Players[{UUID:$(UUID)}].DefaultSpawn.SpawnY int 1 run data get entity @s Pos[1]
 $execute store result storage origins:storage Players[{UUID:$(UUID)}].DefaultSpawn.SpawnZ int 1 run data get entity @s Pos[2]
 $data modify storage origins:storage Players[{UUID:$(UUID)}].DefaultSpawn.SpawnDimension set from entity @s Dimension
+$tellraw @s [{"text":"Set Default Spawn to "},{"nbt":"Players[{UUID:$(UUID)}].DefaultSpawn.SpawnX","storage":"origins:storage"},{"text":", "},{"nbt":"Players[{UUID:$(UUID)}].DefaultSpawn.SpawnY","storage":"origins:storage"},{"text":", "},{"nbt":"Players[{UUID:$(UUID)}].DefaultSpawn.SpawnZ","storage":"origins:storage"},{"text":" in "},{"nbt":"Players[{UUID:$(UUID)}].DefaultSpawn.SpawnDimension","storage":"origins:storage"},{"text":" for "},{"selector":"@s"}]

@@ -1,8 +1,8 @@
-data modify storage origins:storage Settings.Merling set value {}
-data modify storage origins:storage Settings.Merling.SinkGravity set value 0.0
-data modify storage origins:storage Settings.Merling.LandSuffocation set value 1b
-data modify storage origins:storage Settings.Merling.SuffocationMechanics set value {}
-data modify storage origins:storage Settings.Merling.SuffocationMechanics.AffectedByRespiration set value 1b
-data modify storage origins:storage Settings.Merling.SuffocationMechanics.BetterInRain set value 1b
-data modify storage origins:storage Settings.Merling.SuffocationMechanics.RainOxygenUseChance set value 0.2
-data modify storage origins:storage Settings.Merling.SuffocationMechanics.SuffocationDamage set value 2.0
+execute unless data storage origins:storage Settings.Merling run data modify storage origins:storage Settings.Merling set value {}
+execute unless data storage origins:storage Settings.Merling.SinkGravity run data modify storage origins:storage Settings.Merling.SinkGravity set value 0.0
+execute unless data storage origins:storage Settings.Merling.LandSuffocation run data modify storage origins:storage Settings.Merling.LandSuffocation set value 1b
+execute unless data storage origins:storage Settings.Merling.SuffocationMechanics run data modify storage origins:storage Settings.Merling.SuffocationMechanics set value {}
+execute unless data storage origins:storage Settings.Merling.SuffocationMechanics.AffectedByRespiration run data modify storage origins:storage Settings.Merling.SuffocationMechanics.AffectedByRespiration set value 1b
+execute unless data storage origins:storage Settings.Merling.SuffocationMechanics.BetterInRain run data modify storage origins:storage Settings.Merling.SuffocationMechanics.BetterInRain set value 1b
+execute unless data storage origins:storage Settings.Merling.SuffocationMechanics.RainOxygenUseChance run data modify storage origins:storage Settings.Merling.SuffocationMechanics.RainOxygenUseChance set value 0.2
+execute unless data storage origins:storage Settings.Merling.SuffocationMechanics.SuffocationDamage run data modify storage origins:storage Settings.Merling.SuffocationMechanics.SuffocationDamage set value 2.0

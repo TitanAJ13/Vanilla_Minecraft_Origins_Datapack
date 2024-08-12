@@ -1,4 +1,4 @@
-data modify storage origins:storage Settings.Blazeborn set value {}
-data modify storage origins:storage Settings.Blazeborn.FireStrengthMultiplier set value 0.25
-data modify storage origins:storage Settings.Blazeborn.WaterDamage set value 1
-data modify storage origins:storage Settings.Blazeborn.NetherSpawn set value 1b
+execute unless data storage origins:storage Settings.Blazeborn run data modify storage origins:storage Settings.Blazeborn set value {}
+execute unless data storage origins:storage Settings.Blazeborn.FireStrengthMultiplier run data modify storage origins:storage Settings.Blazeborn.FireStrengthMultiplier set value 0.25
+execute unless data storage origins:storage Settings.Blazeborn.WaterDamage run data modify storage origins:storage Settings.Blazeborn.WaterDamage set value 1
+execute unless data storage origins:storage Settings.Blazeborn.NetherSpawn run data modify storage origins:storage Settings.Blazeborn.NetherSpawn set value 1b

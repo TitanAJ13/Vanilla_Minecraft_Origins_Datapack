@@ -5,13 +5,67 @@
             "condition": "all_of",
             "terms": [
                 {
-                    "condition": "location_check",
-                    "offsetY": -1,
-                    "predicate": {
-                        "block": {
-                            "blocks": "#origins:valid_blocks"
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#origins:valid_blocks"
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:stairs",
+                                    "state": {
+                                        "half": "top"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:trapdoors",
+                                    "state": {
+                                        "half": "top",
+                                        "open": "false"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:slabs",
+                                    "state": {
+                                        "type": "top"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:slabs",
+                                    "state": {
+                                        "type": "double"
+                                    }
+                                }
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "condition": "location_check",
@@ -36,16 +90,82 @@
             "condition": "all_of",
             "terms": [
                 {
-                    "condition": "location_check",
-                    "offsetY": -1,
-                    "predicate": {
-                        "block": {
-                            "blocks": "#origins:valid_blocks"
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#origins:valid_blocks"
+                                },
+                                "position": {
+                                    "y": 318
+                                }
+                            }
                         },
-                        "position": {
-                            "y": 318
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:stairs",
+                                    "state": {
+                                        "half": "top"
+                                    }
+                                },
+                                "position": {
+                                    "y": 318
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:trapdoors",
+                                    "state": {
+                                        "half": "top",
+                                        "open": "false"
+                                    }
+                                },
+                                "position": {
+                                    "y": 318
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:slabs",
+                                    "state": {
+                                        "type": "top"
+                                    }
+                                },
+                                "position": {
+                                    "y": 318
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:slabs",
+                                    "state": {
+                                        "type": "double"
+                                    }
+                                },
+                                "position": {
+                                    "y": 318
+                                }
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "condition": "location_check",
@@ -64,16 +184,82 @@
             "condition": "all_of",
             "terms": [
                 {
-                    "condition": "location_check",
-                    "offsetY": -1,
-                    "predicate": {
-                        "block": {
-                            "blocks": "#origins:valid_blocks"
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#origins:valid_blocks"
+                                },
+                                "position": {
+                                    "y": 319
+                                }
+                            }
                         },
-                        "position": {
-                            "y": 319
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:stairs",
+                                    "state": {
+                                        "half": "top"
+                                    }
+                                },
+                                "position": {
+                                    "y": 319
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:trapdoors",
+                                    "state": {
+                                        "half": "top",
+                                        "open": "false"
+                                    }
+                                },
+                                "position": {
+                                    "y": 319
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:slabs",
+                                    "state": {
+                                        "type": "top"
+                                    }
+                                },
+                                "position": {
+                                    "y": 319
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "offsetY": -1,
+                            "predicate": {
+                                "block": {
+                                    "blocks": "#minecraft:slabs",
+                                    "state": {
+                                        "type": "double"
+                                    }
+                                },
+                                "position": {
+                                    "y": 319
+                                }
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         }

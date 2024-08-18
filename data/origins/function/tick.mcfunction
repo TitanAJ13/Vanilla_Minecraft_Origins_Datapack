@@ -51,3 +51,7 @@ scoreboard players set @a originsDeathCount1 0
 
 execute as @e[type=player,tag=Died] run function origins:respawn with entity @s
 execute as @a[tag=SearchingDefault] at @s run function origins:default_spawn_recurse with entity @s
+
+#tag @a[tag=Jumped] remove Jumped
+#tag @a[tag=Sneaked] remove Sneaked
+#tag @a[tag=Sprinted] remove Sprinted

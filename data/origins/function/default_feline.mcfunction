@@ -1,4 +1,6 @@
 execute unless data storage origins:storage Settings.Feline run data modify storage origins:storage Settings.Feline set value {}
-execute unless data storage origins:storage Settings.Feline.SprintJumpStrength run data modify storage origins:storage Settings.Feline.SprintJumpStrength set value 0.8
-execute unless data storage origins:storage Settings.Feline.SprintJumpCooldown run data modify storage origins:storage Settings.Feline.SprintJumpCooldown set value 0
 execute unless data storage origins:storage Settings.Feline.Pescatarianism run data modify storage origins:storage Settings.Feline.Pescatarianism set value 1b
+execute unless data storage origins:storage Settings.Feline.SprintJumpMechanics run data modify storage origins:storage Settings.Feline.SprintJumpMechanics set value {}
+execute unless data storage origins:storage Settings.Feline.SprintJumpMechanics.SprintJumpStrength run data modify storage origins:storage Settings.Feline.SprintJumpStrength set value 0.8
+execute unless data storage origins:storage Settings.Feline.SprintJumpMechanics.BaseJumpStrength run data modify storage origins:storage Settings.Feline.BaseJumpStrength set value 0.41999998688697815
+execute unless data storage origins:storage Settings.Feline.SprintJumpMechanics.Cooldown run data modify storage origins:storage Settings.Feline.SprintJumpMechanics.Cooldown set value 0

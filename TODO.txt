@@ -1,5 +1,20 @@
 -Add new Spawning mechanics
 -Make new Spawn Obstruction mechanics
+	-Initial y-layer
+	-Lower y-layer
+	-Upper y-layer
+	 Each following this order:
+		-North
+		-West
+		-South
+		-East
+		-Northwest
+		-Northeast
+		-Southwest
+		-Southeast
+
+- Update Jumping mechanics with advancements,function tag, etc
+
 -Populate wiki pages
 -Create Blazeborn Advancements
 -Create Bumblebee Advancements

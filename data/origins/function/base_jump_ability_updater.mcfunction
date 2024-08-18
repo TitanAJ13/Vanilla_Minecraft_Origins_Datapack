@@ -1,0 +1,2 @@
+execute as @s[tag=Elytrian] run function origins:launch with storage Settings.Elytrian.LaunchMechanics
+execute as @s[tag=Feline] run function origins:sprint_jump with storage Settings.Feline.SprintJumpMechanics

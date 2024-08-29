@@ -22,7 +22,7 @@ execute as @e[type=marker,tag=BlazeSpawn,tag=SpawnNotFound] run function origins
 execute as @e[type=marker,tag=BlazeSpawn,tag=SpawnFound] run function origins:nether_spawn_obstruction with entity @s data
 
 execute as @a[tag=Bumblebee] run function origins:bumblebee with storage origins:storage Settings.Bumblebee
-execute as @a store result score @s originsScale run attribute @s minecraft:generic.scale get 100
+execute as @a store result score @s originsScale run attribute @s minecraft:scale get 100
 
 execute as @a[tag=Elytrian] run function origins:elytrian with storage origins:storage Settings.Elytrian
 

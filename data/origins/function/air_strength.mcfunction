@@ -1,2 +1,2 @@
-$execute if predicate origins:in_air run attribute @s minecraft:generic.attack_damage modifier add origins:air_strength $(Multiplier) add_multiplied_total
-execute unless predicate origins:in_air run attribute @s minecraft:generic.attack_damage modifier remove origins:air_strength
+$execute if predicate origins:in_air run attribute @s minecraft:attack_damage modifier add origins:air_strength $(Multiplier) add_multiplied_total
+execute unless predicate origins:in_air run attribute @s minecraft:attack_damage modifier remove origins:air_strength

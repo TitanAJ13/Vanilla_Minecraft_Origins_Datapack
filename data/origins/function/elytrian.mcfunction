@@ -11,8 +11,8 @@ execute if items entity @s armor.head #origins:heavy_armor run function origins:
 execute if items entity @s armor.legs #origins:heavy_armor run function origins:drop_leggings with entity @s
 execute if items entity @s armor.feet #origins:heavy_armor run function origins:drop_boots with entity @s
 
-execute if predicate origins:elytrian_increased_fall run attribute @s minecraft:generic.fall_damage_multiplier base set 1.125
-execute unless predicate origins:elytrian_increased_fall run attribute @s minecraft:generic.fall_damage_multiplier base set 1
+execute if predicate origins:elytrian_increased_fall run attribute @s minecraft:fall_damage_multiplier base set 1.125
+execute unless predicate origins:elytrian_increased_fall run attribute @s minecraft:fall_damage_multiplier base set 1
 
 execute unless items entity @s inventory.0 #origins:light_armor unless entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra",components:{"minecraft:custom_data":{NoChestplate:0b}}}]}] run function origins:replace_elytra_enchantments
 

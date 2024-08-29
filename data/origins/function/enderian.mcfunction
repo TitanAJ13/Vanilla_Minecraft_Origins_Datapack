@@ -1,5 +1,5 @@
-$attribute @s minecraft:player.block_interaction_range base set $(BlockReach)
-$attribute @s minecraft:player.entity_interaction_range base set $(EntityReach)
+$attribute @s minecraft:block_interaction_range base set $(BlockReach)
+$attribute @s minecraft:entity_interaction_range base set $(EntityReach)
 
 $execute if score 0 originsConstant matches $(CanUseTeams) run function origins:pacify_endermen with entity @s
 $execute if score 0 originsConstant matches $(CanUseTeams) run team empty originsDeAggroEndermen

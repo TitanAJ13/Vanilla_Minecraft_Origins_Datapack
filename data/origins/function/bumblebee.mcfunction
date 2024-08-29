@@ -5,6 +5,6 @@ $function origins:inflict_effect {Id:"minecraft:poison",Duration:$(PoisonDuratio
 
 $function origins:water_strength {Multiplier:$(WaterStrengthMultiplier)}
 
-attribute @s minecraft:generic.scale base set 0.8
+attribute @s minecraft:scale base set 0.8
 
-attribute @s minecraft:generic.max_health base set 14.0
+attribute @s minecraft:max_health base set 14.0

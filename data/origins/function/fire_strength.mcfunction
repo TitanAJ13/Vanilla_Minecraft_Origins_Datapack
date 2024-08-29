@@ -1,2 +1,2 @@
-$execute if predicate origins:is_on_fire run attribute @s minecraft:generic.attack_damage modifier add origins:fire_strength $(Multiplier) add_multiplied_total
-execute unless predicate origins:is_on_fire run attribute @s minecraft:generic.attack_damage modifier remove origins:fire_strength
+$execute if predicate origins:is_on_fire run attribute @s minecraft:attack_damage modifier add origins:fire_strength $(Multiplier) add_multiplied_total
+execute unless predicate origins:is_on_fire run attribute @s minecraft:attack_damage modifier remove origins:fire_strength

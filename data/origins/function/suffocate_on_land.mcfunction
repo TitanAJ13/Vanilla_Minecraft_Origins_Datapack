@@ -3,7 +3,7 @@ kill @e[tag=WaterChecked,type=marker]
 scoreboard players add @s[scores={originsBreathingWater=1,originsAirTimer=..299}] originsAirTimer 5
 execute unless score @s originsAirTimer matches -20..300 run scoreboard players set @s originsAirTimer 300
 
-$execute if score 1 originsConstant matches $(AffectedByRespiration) store result score @s originsRespirationLevel run attribute @s minecraft:generic.oxygen_bonus get
+$execute if score 1 originsConstant matches $(AffectedByRespiration) store result score @s originsRespirationLevel run attribute @s minecraft:oxygen_bonus get
 $execute if score 0 originsConstant matches $(AffectedByRespiration) run scoreboard players set @s originsRespirationLevel 0
 scoreboard players add @s originsRespirationLevel 1
 scoreboard players set @s originsRespirationDivider 1000000000

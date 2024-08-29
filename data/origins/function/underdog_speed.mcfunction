@@ -1,2 +1,2 @@
-attribute @s[scores={originsHealth=5..}] minecraft:generic.movement_speed modifier remove origins:underdog_speed
-$attribute @s[scores={originsHealth=..$(Health)}] minecraft:generic.movement_speed modifier add origins:underdog_speed $(Multiplier) add_multiplied_total
+attribute @s[scores={originsHealth=5..}] minecraft:movement_speed modifier remove origins:underdog_speed
+$attribute @s[scores={originsHealth=..$(Health)}] minecraft:movement_speed modifier add origins:underdog_speed $(Multiplier) add_multiplied_total
